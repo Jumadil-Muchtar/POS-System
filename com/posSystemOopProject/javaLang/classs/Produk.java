@@ -1,3 +1,5 @@
+package com.posSystemOopProject.javaLang.classs;
+
 public class Produk {
     public String nama ;
     private double harga;
@@ -26,6 +28,9 @@ public class Produk {
     }
     public void setHarga(double hargaParams){
         this.harga = hargaParams;
+    }
+    public boolean getStatusPromo(){
+        return this.statusPromo;
     }
 
 
