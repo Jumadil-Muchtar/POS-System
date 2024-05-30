@@ -1,17 +1,17 @@
-package com.posSystemOopProject.javaLang.classs;
-
-public class Produk {
+package kelas;
+public class Produkk {
     public String nama ;
     private double harga;
     private boolean statusPromo ;
     private int diskon ;
 
-    public Produk(String namaParams, double hargaParams){
+    public Produkk(String namaParams, double hargaParams){
         this.nama = namaParams;
         this.harga = hargaParams;
         this.statusPromo= false;
         this.diskon = 0;
     }
+    
     public void setPromo(boolean statusPromoParams, int diskon ){
         this.statusPromo = statusPromoParams;
         this.diskon = diskon;
@@ -24,6 +24,9 @@ public class Produk {
         }
     }
     public double getHarga() {
+        if(statusPromo){
+            return this.getPromo();
+        }
         return this.harga;
     }
     public void setHarga(double hargaParams){
@@ -32,6 +35,7 @@ public class Produk {
     public boolean getStatusPromo(){
         return this.statusPromo;
     }
+    
 
 
 
