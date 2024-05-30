@@ -9,5 +9,6 @@ public interface PointOfSale {
     void hitungDaftarBelanjaan(ArrayList<ItemBelanja> itemBelanjas);
     void simpanDaftarBelanjaan(ArrayList<ItemBelanja> itemBelanjas);
     ArrayList<ArrayList<ItemBelanja>> cekHistoryTransaksi();
-    void cetakStruk();   
+    void cetakStruk();
+      
 }
